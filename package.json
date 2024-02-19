@@ -1,6 +1,6 @@
 {
   "name": "@codecompose/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A collection of ESLint configurations",
   "files": [
     "src"
