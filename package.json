@@ -1,0 +1,33 @@
+{
+  "name": "@codecompose/eslint-config",
+  "version": "0.0.0",
+  "description": "A collection of ESLint configurations",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/base.js",
+    "./base": "./src/base.js",
+    "./node": "./src/node.js",
+    "./react": "./src/react.js",
+    "./vercel-app": "./src/vercel-app.js",
+    "./vercel-lib": "./src/vercel-lib.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thijs Koerselman",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-define-config": "^1.24.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0"
+  }
+}
