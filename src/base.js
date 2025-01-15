@@ -13,7 +13,6 @@ module.exports = defineConfig({
     sourceType: "module",
   },
   extends: [
-    "prettier",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
   ],
