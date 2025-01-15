@@ -1,6 +1,6 @@
 # ESLint Config
 
-A collection of ESLint configurations.
+A collection of minimal but opinionated ESLint configurations, to standardize and simplify my own projects and hopefully yours too.
 
 ## Usage
 

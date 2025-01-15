@@ -20,10 +20,10 @@ module.exports = defineConfig({
   plugins: ["@typescript-eslint", "unused-imports"],
   rules: {
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       { args: "after-used", argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
     ],
-    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-floating-promises": "warn",
     "@typescript-eslint/no-misused-promises": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/consistent-type-definitions": ["warn", "type"],

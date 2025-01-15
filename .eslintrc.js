@@ -5,7 +5,6 @@ const { defineConfig } = require("eslint-define-config");
 module.exports = defineConfig({
   root: true,
   extends: [
-    "prettier",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
   ],

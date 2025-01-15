@@ -1,6 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["./base.js", "./extra.js"],
+  extends: ["./base.js"],
   env: {
     node: true,
   },
