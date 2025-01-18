@@ -2,6 +2,7 @@
   "name": "@codecompose/eslint-config",
   "version": "1.1.0-1",
   "description": "Minimal but opinionated ESLint configurations",
+  "type": "module",
   "files": [
     "src"
   ],
@@ -14,18 +15,22 @@
     "./vercel-lib": "./src/vercel-lib.js"
   },
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thijs Koerselman",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.46.0",
-    "typescript": "^5.2.2"
+    "eslint": "^9.0.0-beta.1"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
-    "eslint-define-config": "^1.24.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "globals": "^14.0.0",
     "eslint-plugin-unused-imports": "^3.0.0"
+  },
+  "packageManager": "pnpm@9.15.3",
+  "engines": {
+    "node": ">=20"
   }
 }
