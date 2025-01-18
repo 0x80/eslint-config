@@ -8,18 +8,24 @@
  *
  */
 
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: [
-    "./base.js",
-    require.resolve("@vercel/style-guide/eslint/next"),
-    "./extra.js",
-  ],
-  globals: {
-    React: true,
-    JSX: true,
+import vercelStyleGuide from "@vercel/style-guide/eslint/next";
+import globals from "globals";
+import baseConfig from "./base.js";
+
+/** @type {import('eslint').Flat.Config[]} */
+const config = [
+  ...baseConfig,
+  ...vercelStyleGuide,
+  {
+    files: ["**/*.{js,ts,tsx}"],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        React: true,
+        JSX: true,
+      },
+    },
   },
-  env: {
-    browser: true,
-  },
-};
+];
+
+export default config;

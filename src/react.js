@@ -1,11 +1,19 @@
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: ["./base.js", "./extra.js"],
-  globals: {
-    React: true,
-    JSX: true,
+import globals from "globals";
+import baseConfig from "./base.js";
+
+/** @type {import('eslint').Flat.Config[]} */
+const config = [
+  ...baseConfig,
+  {
+    files: ["**/*.{js,ts,tsx}"],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        React: true,
+        JSX: true,
+      },
+    },
   },
-  env: {
-    browser: true,
-  },
-};
+];
+
+export default config;
